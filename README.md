@@ -21,17 +21,18 @@ Procesi
 
 •	Prikaz trenutno aktuelnih predstava dostupnih za rezervaciju
 
-•	Korisnik prilikom pristupa u izborniku bira da li pripada kategoriji guest(kupac)  ili admin, s različitim pravima pristupa. Pri izboru kategorije guest otvara se polje za registraciju, a nakon registracije slijedi mogucnost rezervacije karata. Pri izvoru kategorije admin otvara se polje za logovanje admina.
+•	Neregistrovani korisnik ima mogućnost pregleda trenutno aktuelnih predstava u pozorištu
 
-•	Administrator/zaposlenik ima mogućnost ažuriranja, brisanja i dodavanja novih podataka o predstojećim događajima
+•	Neregistrovani korisnik, ukoliko želi, može da se registruje kreiranjem profila, pri čemu će svoj profil kreirati na osnovu statusa (admin ili guest)
 
-•	Kategorizacija predstava po mjestima održavanja
+•	Kupac prilikom odabira željene predstave ima mogućnost rezervacije karte za istu, logovanjem na vlastiti profil i popunjavanjem pojedinosti o rezervaciji kao što su datum, vrijeme, broj karata, odabir sjedišta u dvorani u kojoj se održava određena predstava
 
-•	Korisnici popunjavaju zahtjev za rezervaciju karata, što podrazumijeva popunjavanje osnovnih podataka o mjestu,terminu i predstavi za koju rezerviše karte
+•	Premium kupac se prijavljuje na svoj profil, te popunjava podatke za validaciju povlastice pri čemu sistem izračunava popust ili ima mogućnost rezervacije VIP sjedišta
 
-•	Korisnici imaju uvid u trenutno rezervisana i mogućnost izbora slobodnih sjedišta u dvorani u kojoj se održava određena predstava 
+•	Administrator ažurira listu predstava, što podrazumijeva brisanja i dodavanja novih događaja ili uređivanje postojećih
 
-•	Premijum korisnici imaju uvid u pogodnosti koje im omogućava posjedovanje bonus kartice 
+•	Administrator ima podatke o trenutnim rezervacijama, pod određenim okolnostima ima mogućnost otkazivanje istih
+
 
 
 Funkcionalnosti:
