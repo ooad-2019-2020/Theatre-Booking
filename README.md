@@ -13,7 +13,9 @@ Opis teme:
 
 TheatreBooking je aplikacija za rezervaciju karata za pozorište. Ova aplikacija olakšava kupcima kupovinu karata za pozorište na način da mogu na vrijeme da rezervišu termin i mjesto u pozorištu za predstavu koju odaberu. Online rezervacije, osim što kupcima nude uvid u raspoloživost karata i slobodnih termina za predstave, te rezervaciju i otkaz rezervacije karata, olakšava i zaposlenicima pozorišta da imaju bolji uvid u posjećenost predstava ili određenih dnevnih termina, zatim da mogu lakše i na vrijeme izanalizirati koje su predstave popularne, aktuelne i najviše gledane i na kraju da mogu blagovremeno i brzo da obavijeste publiku o terminima i predstavama koje se igraju u pozorištu.
 
+
 Funkcionalnosti:
+
 
 Funkcionalni zahtjevi:
 
@@ -28,6 +30,8 @@ Registrovani korisnici: mogućnost rezervacije karata, mogućnost pretrage aktue
 Neregistrovani korisnik: mogućnost registracije, a zatim iste funkcionalnosti kao što ima registrovan korisnik ili admin u zavisnosti od tipa registracije koju ovaj korisnik odabere
 Registrovani premijum korisnici: mogućnost rezervacije karata, mogućnost pretrage aktuelnih predstava po kriteriju (datum,žanr i sl), mogućnost pregleda bonusa i povlastica sto ukljucuje izracune popusta i rezervacije vip sjedista
 
+
+
 Nefunkcionalni zahtjevi:
 
 • Pouzdanost - Informacije u sistemu ne smiju biti zastarjele.
@@ -36,6 +40,8 @@ Postoji ograničenje za rezervaciju karata (2h prije početka predstave), nakon 
 • Prijateljski interfejs - Korisnik treba imati laganu i intuitivnu interakciju sa sistemom, uz obavještenja o ograničenjima (npr. koja sjedišta su zauzeta) i pogreškama (npr. unesena neispravna e-mail adresa).
 
 • Sigurnost i privatnost - U sistemu se čuvaju profili korisnika. Od korisnika se očekuje da unese samo osnovne podatke (ime, prezime, broj telefona, e-mail adresa i sl) koji su dostupni isključivo administratoru.
+
+
 
 Procesi:
 
@@ -52,6 +58,8 @@ Procesi:
 • Administrator ažurira listu predstava, što podrazumijeva brisanja i dodavanja novih događaja ili uređivanje postojećih
 
 • Administrator ima podatke o trenutnim rezervacijama, pod određenim okolnostima ima mogućnost otkazivanje istih
+
+
 
 Akteri:
 -neregistrovani korisnik
