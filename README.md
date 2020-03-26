@@ -69,7 +69,7 @@ Akteri:
 
 -kupac
 
--premijum kupac ( kupac koji posjeduje srebrenu ili zlatnu člansku karticu koja mu donosi brojne pogodnosti u vidu bonusa, popusta, specijalnih mjesta u samom pozoristu itd.)
+-premium kupac ( kupac koji posjeduje srebrenu ili zlatnu člansku karticu koja mu donosi brojne pogodnosti u vidu bonusa, popusta, specijalnih mjesta u samom pozoristu itd.)
 
 -admin
 
