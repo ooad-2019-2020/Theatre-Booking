@@ -5,11 +5,11 @@ Tema: TheatreBooking
 -	Veladžić Hana
 -	Šabanović Amina
 
-Opis teme:	
+OPIS TEME:	
 
 TheatreBooking je aplikacija za rezervaciju karata za pozorište. Ova aplikacija olakšava kupcima kupovinu karata za pozorište na način da mogu na vrijeme da rezervišu termin i mjesto u pozorištu za predstavu koju odaberu. Online rezervacije, osim što kupcima nude uvid u raspoloživost karata i slobodnih termina za predstave, te rezervaciju i otkaz rezervacije karata, olakšava i zaposlenicima pozorišta da imaju bolji uvid u posjećenost predstava ili određenih dnevnih termina, zatim da mogu lakše i na vrijeme izanalizirati koje su predstave popularne, aktuelne i najviše gledane i na kraju da  mogu blagovremeno i brzo da obavijeste publiku o terminima i predstavama koje se igraju u pozorištu. 
 
-Funkcionalnosti:
+FUNKCIONALNOSTI:
 
  Funkcionalni zahtjevi:
  
@@ -39,7 +39,7 @@ Postoji ograničenje za rezervaciju karata (2h prije početka predstave), nakon 
 • Sigurnost i privatnost - U sistemu se čuvaju profili korisnika. Od korisnika se očekuje da unese samo osnovne podatke (ime, prezime, broj telefona, e-mail adresa i sl) koji su dostupni isključivo administratoru.
 
 
-Procesi:
+PROCESIi:
 
 •	Prikaz trenutno aktuelnih predstava dostupnih za rezervaciju
 
@@ -55,7 +55,7 @@ Procesi:
 
 •	Administrator ima podatke o trenutnim rezervacijama, pod određenim okolnostima ima mogućnost otkazivanje istih
 
-Akteri:
+AKTERI:
 
 -neregistrovani korisnik
 
