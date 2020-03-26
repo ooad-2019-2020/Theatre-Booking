@@ -14,10 +14,10 @@
 TheatreBooking je aplikacija za rezervaciju karata za pozorište. Ova aplikacija olakšava kupcima kupovinu karata za pozorište na način da mogu na vrijeme da rezervišu termin i mjesto u pozorištu za predstavu koju odaberu. Online rezervacije, osim što kupcima nude uvid u raspoloživost karata i slobodnih termina za predstave, te rezervaciju i otkaz rezervacije karata, olakšava i zaposlenicima pozorišta da imaju bolji uvid u posjećenost predstava ili određenih dnevnih termina, zatim da mogu lakše i na vrijeme izanalizirati koje su predstave popularne, aktuelne i najviše gledane i na kraju da mogu blagovremeno i brzo da obavijeste publiku o terminima i predstavama koje se igraju u pozorištu.
 
 
-### Funkcionalnosti:
+## Funkcionalnosti:
 
 
-Funkcionalni zahtjevi:
+### Funkcionalni zahtjevi:
 
 • Pogled administratora
 
@@ -35,7 +35,7 @@ Registrovani premijum korisnici: mogućnost rezervacije karata, mogućnost pretr
 
 
 
-Nefunkcionalni zahtjevi:
+### Nefunkcionalni zahtjevi:
 
 • Pouzdanost - Informacije u sistemu ne smiju biti zastarjele.
 Postoji ograničenje za rezervaciju karata (2h prije početka predstave), nakon čega administrator unosi uplaćena sjedišta u sistem kao zauzeta, neplaćena sjedišta oslobađa. Ukoliko dođe do otkazivanja neke predstave, treba da se obavijeste korisnici koji su izvršili rezervaciju (putem e-mail adrese na koju su registrovani) o tome.
@@ -64,14 +64,15 @@ Procesi:
 
 
 
-### Akteri:
--neregistrovani korisnik
+## Akteri:
+•	neregistrovani korisnik
 
--kupac
+•	kupac
 
--premium kupac ( kupac koji posjeduje srebrenu ili zlatnu člansku karticu koja mu donosi brojne pogodnosti u vidu bonusa, popusta, specijalnih mjesta u samom pozoristu itd.)
+•	premium kupac 
 
--admin
+•	admin
+
 
 
 
