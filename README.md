@@ -15,7 +15,9 @@ Funkcionalnosti:
  
  • Pogled administratora 
  
-• Pogled registrovanog korisnika (guest) 
+• Pogled registrovanog korisnika 
+ 
+ • Pogled neregistrovanog korisnika (guest)
 
 Administrator: o funkcionalnost evidencije predstava (aktuelne predstave za taj mjesec, kratki sažetak o pojedinoj predstavi i njihovo vrijeme izvođenja), o mogućnost postavljanja, ažuriranja i uklanjanja predstava o mogućnost uvida u popunjenost i interesovanje za različitim predstavama, o mogućnost potvrde rezervacija 2h prije početka predstave
 
