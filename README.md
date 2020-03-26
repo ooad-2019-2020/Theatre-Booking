@@ -26,8 +26,11 @@ Funkcionalni zahtjevi:
 • Pogled neregistrovanog korisnika (guest)
 
 Administrator: o funkcionalnost evidencije predstava (aktuelne predstave za taj mjesec, kratki sažetak o pojedinoj predstavi i njihovo vrijeme izvođenja), o mogućnost postavljanja, ažuriranja i uklanjanja predstava o mogućnost uvida u popunjenost i interesovanje za različitim predstavama, o mogućnost potvrde rezervacija 2h prije početka predstave
+
 Registrovani korisnici: mogućnost rezervacije karata, mogućnost pretrage aktuelnih predstava po kriteriju (datum, žanr i sl)
+
 Neregistrovani korisnik: mogućnost registracije, a zatim iste funkcionalnosti kao što ima registrovan korisnik ili admin u zavisnosti od tipa registracije koju ovaj korisnik odabere
+
 Registrovani premijum korisnici: mogućnost rezervacije karata, mogućnost pretrage aktuelnih predstava po kriteriju (datum,žanr i sl), mogućnost pregleda bonusa i povlastica sto ukljucuje izracune popusta i rezervacije vip sjedista
 
 
