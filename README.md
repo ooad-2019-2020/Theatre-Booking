@@ -58,7 +58,7 @@ Postoji ograničenje za rezervaciju karata (2h prije početka predstave), nakon 
 
 • Premium kupac se prijavljuje na svoj profil, te popunjava podatke za validaciju povlastice pri čemu sistem izračunava popust ili ima mogućnost rezervacije VIP sjedišta
 
-• Administrator ažurira listu predstava, što podrazumijeva brisanja i dodavanja novih događaja ili uređivanje postojećih
+• Administrator ažurira listu predstava, što podrazumijeva brisanje i dodavanje novih događaja ili uređivanje postojećih
 
 • Administrator ima podatke o trenutnim rezervacijama, pod određenim okolnostima ima mogućnost otkazivanje istih
 
