@@ -1,0 +1,26 @@
+# SOLID Principi
+## Single Responsibility Principle
+Ovaj princip nam govori da bi klasa trebala da ima samo jedan razlog za promjenu. Sve klase u modelu
+treba da sadrže gettere i setter i da po potrebi implementiraju interfejse ili metode naslijeđene iz 
+apstraktnih klasa. Ovime ne sadrže one metode koje nisu njihova odgovornost.
+Ovo je veoma važno u ispunjenju ovog principa objektno orijentiranog dizajna. Zaslugu u ovome imaju
+i interfejsi koji nude dodatnu apstrakciju i skidaju odgovornost sa klasa koji ih implementiraju.
+## Open-closed principle
+Ovaj princip kaže da bi klase trebali biti otvorene za nadogradnju a zatvorene za modifikaciju. U modelu
+smo koristili decorator pattern, koji upravo omogućava ispunjenje ovog principa. Koristeći ovaj pattern, 
+osobine klasa se dinamički dodaju/sklanjaju, bez da je potrebno modifikovati klasu. Ovo daju puno mogućnosti
+uz relativno mali broj klasa. Takođe, interfejsi i naslijeđivanje koji se intenzivno koriste omogućuju da 
+se ideje ovog principa ispoštuju. 
+## Liskov substitution principle
+Podklase bi trebalo biti zamjenjive baznoj klasi. Ovaj princip nam kaže da bilo koja upotreba bazne klase
+omogućava upotrebu i izvedenih klasa, sa istim rezultatom. Ovo je sigurno ispoštovano jer u svakoj hijerarhiji
+naslijeđivanja koja je pristuna, izvedene klase naslijeđuju sve metode bazne klase.
+## Interface segregation principle
+Ovo je single responsibility principle za interfejse. Svi interfejsi su minimalistički i podržavaju samo potrebne 
+operacije. Ovo dovodi do toga da klase ne implementiraju metode koje im nisu potrebne, što je i ideja ovog principa
+objektno orijentisanog dizajna. Zbog toga, prisutan je veliki broj interfejsa koji zadovoljavaju SRP.
+## Dependecy inversion principle
+Moduli visokog nivoa ne bi trebali da zavise od mogula niskog nivoa, oba bi trebalo da zavise od apstrakcija.
+Na vrhu hijerarhije svih klasa se nalazi ili apstraktna klasa ili interfejs. Ovo je dobar pokazatelj da je ovaj
+princip ispoštovan. Takođe, upotreba Factory pattern-a omogućava da se detalji implementacije pojedinih klasa 
+sakriju od klijenta, pa klijent ne zavisi od modula niskog nivoa.
