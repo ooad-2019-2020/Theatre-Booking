@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{B5F304BD-CB9E-4FB6-9657-1E705DDA57AD}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TheatreBooking/Controllers/HomeController.cs">
+    <Files>
+      <File FileName="TheatreBooking/Controllers/HomeController.cs" Line="8" Column="29" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TheatreBooking" expanded="True">
+            <Node name="TheatreBooking" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.TheatreBooking FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
