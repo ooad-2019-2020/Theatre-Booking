@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ednafazlagic/Projects/TheatreBooking/TheatreBooking/TheatreBooking.csproj": {}
+    "C:\\Users\\BS\\Source\\Repos\\ooad-2019-2020\\Grupa8-BiloSta\\Implementation\\TheatreBooking\\TheatreBooking.csproj": {}
   },
   "projects": {
-    "/Users/ednafazlagic/Projects/TheatreBooking/TheatreBooking/TheatreBooking.csproj": {
+    "C:\\Users\\BS\\Source\\Repos\\ooad-2019-2020\\Grupa8-BiloSta\\Implementation\\TheatreBooking\\TheatreBooking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ednafazlagic/Projects/TheatreBooking/TheatreBooking/TheatreBooking.csproj",
+        "projectUniqueName": "C:\\Users\\BS\\Source\\Repos\\ooad-2019-2020\\Grupa8-BiloSta\\Implementation\\TheatreBooking\\TheatreBooking.csproj",
         "projectName": "TheatreBooking",
-        "projectPath": "/Users/ednafazlagic/Projects/TheatreBooking/TheatreBooking/TheatreBooking.csproj",
-        "packagesPath": "/Users/ednafazlagic/.nuget/packages/",
-        "outputPath": "/Users/ednafazlagic/Projects/TheatreBooking/TheatreBooking/obj/",
+        "projectPath": "C:\\Users\\BS\\Source\\Repos\\ooad-2019-2020\\Grupa8-BiloSta\\Implementation\\TheatreBooking\\TheatreBooking.csproj",
+        "packagesPath": "C:\\Users\\BS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\BS\\Source\\Repos\\ooad-2019-2020\\Grupa8-BiloSta\\Implementation\\TheatreBooking\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ednafazlagic/.config/NuGet/NuGet.Config"
+          "C:\\Users\\BS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -35,6 +37,20 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -53,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
