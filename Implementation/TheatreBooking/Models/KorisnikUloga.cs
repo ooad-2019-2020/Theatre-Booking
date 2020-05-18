@@ -12,6 +12,6 @@ namespace TheatreBooking.Models
         public int Popust { get; set; }
         public int KarticaID { get; set; }
         public string VrstaKartice { get; set; }
-        public virtual ICollection<Korisnik> Korisnik { get; set; }
+        public virtual Korisnik Korisnik { get; set; }
     }
 }
