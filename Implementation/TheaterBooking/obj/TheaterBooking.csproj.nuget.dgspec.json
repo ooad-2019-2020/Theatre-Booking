@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BS\\Source\\Repos\\ooad-2019-2020\\Grupa8-BiloSta\\Implementation\\TheaterBooking\\TheaterBooking.csproj": {}
+    "C:\\Users\\Edna i Anesa\\Source\\Repos\\Grupa8-BiloSta\\Implementation\\TheaterBooking\\TheaterBooking.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BS\\Source\\Repos\\ooad-2019-2020\\Grupa8-BiloSta\\Implementation\\TheaterBooking\\TheaterBooking.csproj": {
+    "C:\\Users\\Edna i Anesa\\Source\\Repos\\Grupa8-BiloSta\\Implementation\\TheaterBooking\\TheaterBooking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BS\\Source\\Repos\\ooad-2019-2020\\Grupa8-BiloSta\\Implementation\\TheaterBooking\\TheaterBooking.csproj",
+        "projectUniqueName": "C:\\Users\\Edna i Anesa\\Source\\Repos\\Grupa8-BiloSta\\Implementation\\TheaterBooking\\TheaterBooking.csproj",
         "projectName": "TheaterBooking",
-        "projectPath": "C:\\Users\\BS\\Source\\Repos\\ooad-2019-2020\\Grupa8-BiloSta\\Implementation\\TheaterBooking\\TheaterBooking.csproj",
-        "packagesPath": "C:\\Users\\BS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BS\\Source\\Repos\\ooad-2019-2020\\Grupa8-BiloSta\\Implementation\\TheaterBooking\\obj\\",
+        "projectPath": "C:\\Users\\Edna i Anesa\\Source\\Repos\\Grupa8-BiloSta\\Implementation\\TheaterBooking\\TheaterBooking.csproj",
+        "packagesPath": "C:\\Users\\Edna i Anesa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Edna i Anesa\\Source\\Repos\\Grupa8-BiloSta\\Implementation\\TheaterBooking\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\BS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Edna i Anesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -69,6 +69,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -77,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
