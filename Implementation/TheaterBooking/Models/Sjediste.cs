@@ -12,6 +12,7 @@ namespace TheatreBooking.Models
         public Boolean Slobodno { get; set; }
         public double Cijena { get; set; }
         public int RezervacijaID { get; set; }
+
         public virtual Rezervacija Rezervacija { get; set; }
 
     }
