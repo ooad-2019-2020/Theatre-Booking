@@ -1,0 +1,15 @@
+Od paterna ponasanja koristeni su sljedeci paterni: 
+
+- Strategy patern služi kako bi se različite implementacije istog algoritma izdvojile u
+različite klase, te kako bi se omogućila brza i jednostavna promjena implementacije koja se
+želi koristiti u bilo kojem trenutku. Na ovaj način omogućava se i jednostavno brisanje ili
+dodavanje novog algoritma koji se može koristiti po želji. 
+
+- Chain of responsibility patern namijenjen je kako bi se jedan kompleksni proces obrade
+razdvojio na način da više objekata na različite načine procesiraju primljene podatke.
+Kreiranjem lanca obrade, pri čemu nakon vršenja parcijalne obrade svaki objekat prosljeđuje
+podatke narednom objektu u nizu, postiže se smanjenje kompleksnosti pojedinačnih procesa
+obrade i jednostavnije razumijevanje cijelog procesa. Osim toga, svakom objektu dolaze samo
+oni podaci koje trebaju obraditi te se na taj način izbjegava dupliciranje sadržaja.
+
+Kako su ova dva paterna primjenjena nad našim projektom najbolje se vidi na priloženim slikama
