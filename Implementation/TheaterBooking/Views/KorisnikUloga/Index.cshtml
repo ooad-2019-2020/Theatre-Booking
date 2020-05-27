@@ -1,0 +1,47 @@
+﻿@model IEnumerable<TheatreBooking.Models.KorisnikUloga>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TipKorisnika)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VrstaKartice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BrojKartice)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipKorisnika)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VrstaKartice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BrojKartice)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.KorisnikUlogaID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.KorisnikUlogaID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.KorisnikUlogaID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,42 @@
+﻿@model TheatreBooking.Models.Sjediste
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Sjediste</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BrojSjedista)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BrojSjedista)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Slobodno)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Slobodno)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Cijena)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Cijena)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Rezervacija)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Rezervacija.RezervacijaID)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.SjedisteID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
