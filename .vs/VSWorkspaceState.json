@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Implementation"
+    "\\Implementation",
+    "\\Implementation\\TheaterBooking",
+    "\\Implementation\\TheaterBooking\\Areas",
+    "\\Implementation\\TheaterBooking\\Areas\\Identity",
+    "\\Implementation\\TheaterBooking\\Areas\\Identity\\Pages"
   ],
-  "SelectedNode": "\\Implementation\\TheaterBooking.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TheatreBooking.Models
 {
-    public class Korisnik
+    public class Korisnik : IdentityUser
     {
         [ScaffoldColumn(false)]
         public int KorisnikID { get; set; }
@@ -23,7 +24,7 @@ namespace TheatreBooking.Models
         public string Password { get; set; }
         [Required(ErrorMessage = "Unesite email adresu")]
         [RegularExpression(@"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$", ErrorMessage = "Email is not valid.")]
-        public string Email { get; set; }
+       
         public string ImePrezime { get { return string.Format("{0} {1}", Ime, Prezime); } }
         public int KorisnikUlogaID { get; set; }
         public virtual KorisnikUloga KorisnikUloga { get; set; }

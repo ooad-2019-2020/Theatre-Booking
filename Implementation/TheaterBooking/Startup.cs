@@ -12,6 +12,7 @@ using TheaterBooking.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using TheatreBooking.Models;
 
 namespace TheaterBooking
 {
@@ -33,7 +34,8 @@ namespace TheaterBooking
             services.AddDbContext<TheatreBooking.Models.BiloStaContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+
+            services.AddIdentity<Korisnik, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
