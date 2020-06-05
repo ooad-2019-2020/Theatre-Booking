@@ -669,3 +669,8 @@ C:\Users\Amina\source\repos\ooad-2019-2020\Grupa8-BiloSta\Implementation\Theater
 C:\Users\Amina\source\repos\ooad-2019-2020\Grupa8-BiloSta\Implementation\TheaterBooking\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
 C:\Users\Amina\source\repos\ooad-2019-2020\Grupa8-BiloSta\Implementation\TheaterBooking\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Amina\source\repos\ooad-2019-2020\Grupa8-BiloSta\Implementation\TheaterBooking\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Edna i Anesa\Desktop\Bilosta\Implementation\TheaterBooking\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\Edna i Anesa\Desktop\Bilosta\Implementation\TheaterBooking\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\Edna i Anesa\Desktop\Bilosta\Implementation\TheaterBooking\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\Edna i Anesa\Desktop\Bilosta\Implementation\TheaterBooking\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Edna i Anesa\Desktop\Bilosta\Implementation\TheaterBooking\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs

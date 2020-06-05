@@ -10,7 +10,7 @@ using TheaterBooking.Data;
 namespace TheaterBooking.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20200530133053_CustomUser")]
+    [Migration("20200605081017_CustomUser")]
     partial class CustomUser
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

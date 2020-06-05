@@ -6,10 +6,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Data\Migrations\20200530133053_CustomUser.cs" />
+    <Compile Remove="Data\Migrations\20200530133053_CustomUser.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200605065900_CustoUser.cs" />
+    <Compile Remove="Data\Migrations\20200605065900_CustoUser.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200605071115_CustomUser.cs" />
+    <Compile Remove="Data\Migrations\20200605071115_CustomUser.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200605072632_CustomUser.cs" />
+    <Compile Remove="Data\Migrations\20200605072632_CustomUser.Designer.cs" />
     <Compile Remove="Migrations\20200519011224_Migracija.cs" />
     <Compile Remove="Migrations\20200519011224_Migracija.Designer.cs" />
     <Compile Remove="Migrations\20200521103510_pocetna migracija.cs" />
     <Compile Remove="Migrations\20200521103510_pocetna migracija.Designer.cs" />
+    <Compile Remove="Migrations\20200526083422_Migracija2.cs" />
+    <Compile Remove="Migrations\20200526083422_Migracija2.Designer.cs" />
+    <Compile Remove="Migrations\20200526084856_Migracija3.cs" />
+    <Compile Remove="Migrations\20200526084856_Migracija3.Designer.cs" />
   </ItemGroup>
 
 

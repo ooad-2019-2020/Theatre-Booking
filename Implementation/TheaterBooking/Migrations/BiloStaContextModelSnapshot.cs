@@ -26,14 +26,13 @@ namespace TheaterBooking.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Naziv")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Opis")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Slika")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("naziv")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("opis")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("DogadjajID");
@@ -49,27 +48,21 @@ namespace TheaterBooking.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Ime")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("KorisnikUlogaID")
                         .HasColumnType("int");
 
                     b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(20)")
-                        .HasMaxLength(20);
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Prezime")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Username")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("KorisnikID");
@@ -87,14 +80,17 @@ namespace TheaterBooking.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("BrojKartice")
+                    b.Property<int>("KarticaID")
                         .HasColumnType("int");
 
-                    b.Property<int>("TipKorisnika")
+                    b.Property<int>("Popust")
                         .HasColumnType("int");
 
-                    b.Property<int>("VrstaKartice")
-                        .HasColumnType("int");
+                    b.Property<string>("Uloga")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("VrstaKartice")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("KorisnikUlogaID");
 
@@ -133,6 +129,9 @@ namespace TheaterBooking.Migrations
 
                     b.Property<int>("PredstavaID")
                         .HasColumnType("int");
+
+                    b.Property<double>("UkupniTrosak")
+                        .HasColumnType("float");
 
                     b.HasKey("RezervacijaID");
 
