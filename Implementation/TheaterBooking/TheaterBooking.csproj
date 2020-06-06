@@ -14,6 +14,10 @@
     <Compile Remove="Data\Migrations\20200605071115_CustomUser.Designer.cs" />
     <Compile Remove="Data\Migrations\20200605072632_CustomUser.cs" />
     <Compile Remove="Data\Migrations\20200605072632_CustomUser.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200605081017_CustomUser.cs" />
+    <Compile Remove="Data\Migrations\20200605081017_CustomUser.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200606180337_test.cs" />
+    <Compile Remove="Data\Migrations\20200606180337_test.Designer.cs" />
     <Compile Remove="Migrations\20200519011224_Migracija.cs" />
     <Compile Remove="Migrations\20200519011224_Migracija.Designer.cs" />
     <Compile Remove="Migrations\20200521103510_pocetna migracija.cs" />

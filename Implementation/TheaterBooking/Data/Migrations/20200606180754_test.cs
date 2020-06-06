@@ -2,7 +2,7 @@
 
 namespace TheaterBooking.Data.Migrations
 {
-    public partial class CustomUser : Migration
+    public partial class test : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -10,8 +10,8 @@ using TheaterBooking.Data;
 namespace TheaterBooking.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20200605081017_CustomUser")]
-    partial class CustomUser
+    [Migration("20200606180754_test")]
+    partial class test
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
