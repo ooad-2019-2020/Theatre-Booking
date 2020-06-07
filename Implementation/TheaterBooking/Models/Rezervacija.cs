@@ -11,9 +11,9 @@ namespace TheatreBooking.Models
         [ScaffoldColumn(false)]
         public int RezervacijaID { get; set; }
         /*public double UkupniTrosak { get; set; }*/
-        public int KorisnikID { get; set; }
+     
         public int PredstavaID { get; set; }
-        public virtual Korisnik Korisnik { get; set; }
+        
         public virtual Predstava Predstava { get; set; }
 
     }

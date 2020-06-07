@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using TheatreBooking.Models;
+using TheaterBooking.Models;
 
 namespace TheaterBooking
 {
@@ -35,7 +36,7 @@ namespace TheaterBooking
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddIdentity<Korisnik, IdentityRole>()
+            services.AddIdentity<Korisnik, IdentityRole>() 
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();

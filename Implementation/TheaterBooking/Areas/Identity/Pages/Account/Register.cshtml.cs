@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using TheaterBooking.Models;
 using TheatreBooking.Models;
 
 namespace TheaterBooking.Areas.Identity.Pages.Account
@@ -34,13 +35,13 @@ namespace TheaterBooking.Areas.Identity.Pages.Account
 
         [BindProperty]
         public InputModel Input { get; set; }
-
+        
         public string ReturnUrl { get; set; }
 
         public IList<AuthenticationScheme> ExternalLogins { get; set; }
 
         public class InputModel
-        {
+        { 
             [Required]
             [EmailAddress]
             [Display(Name = "Email")]
@@ -56,9 +57,7 @@ namespace TheaterBooking.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
-            public string Username { get; set; }
-            public string Ime { get; set; }
-
+            public string Ime { get; set;  }
             public string Prezime { get; set; }
 
 
@@ -76,7 +75,7 @@ namespace TheaterBooking.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new Korisnik { UserName = Input.Email, Email = Input.Email, Username = Input.Username, Ime = Input.Ime, Prezime = Input.Prezime };
+                var user = new Korisnik { UserName = Input.Email, Email = Input.Email, Ime=Input.Ime, Prezime=Input.Prezime};
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {

@@ -150,7 +150,7 @@ namespace TheaterBooking.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("TheatreBooking.Models.Korisnik", b =>
+            modelBuilder.Entity("TheaterBooking.Models.Korisnik", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -170,14 +170,7 @@ namespace TheaterBooking.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Ime")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("KorisnikID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("KorisnikUlogaID")
-                        .HasColumnType("int");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
@@ -193,11 +186,6 @@ namespace TheaterBooking.Data.Migrations
                         .HasColumnType("nvarchar(256)")
                         .HasMaxLength(256);
 
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(20)")
-                        .HasMaxLength(20);
-
                     b.Property<string>("PasswordHash")
                         .HasColumnType("nvarchar(max)");
 
@@ -208,7 +196,6 @@ namespace TheaterBooking.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Prezime")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SecurityStamp")
@@ -221,14 +208,7 @@ namespace TheaterBooking.Data.Migrations
                         .HasColumnType("nvarchar(256)")
                         .HasMaxLength(256);
 
-                    b.Property<string>("Username")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("KorisnikUlogaID")
-                        .IsUnique();
 
                     b.HasIndex("NormalizedEmail")
                         .HasName("EmailIndex");
@@ -239,27 +219,6 @@ namespace TheaterBooking.Data.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
-                });
-
-            modelBuilder.Entity("TheatreBooking.Models.KorisnikUloga", b =>
-                {
-                    b.Property<int>("KorisnikUlogaID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("BrojKartice")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TipKorisnika")
-                        .HasColumnType("int");
-
-                    b.Property<int>("VrstaKartice")
-                        .HasColumnType("int");
-
-                    b.HasKey("KorisnikUlogaID");
-
-                    b.ToTable("KorisnikUloga");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -273,7 +232,7 @@ namespace TheaterBooking.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("TheatreBooking.Models.Korisnik", null)
+                    b.HasOne("TheaterBooking.Models.Korisnik", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -282,7 +241,7 @@ namespace TheaterBooking.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("TheatreBooking.Models.Korisnik", null)
+                    b.HasOne("TheaterBooking.Models.Korisnik", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -297,7 +256,7 @@ namespace TheaterBooking.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("TheatreBooking.Models.Korisnik", null)
+                    b.HasOne("TheaterBooking.Models.Korisnik", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -306,18 +265,9 @@ namespace TheaterBooking.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("TheatreBooking.Models.Korisnik", null)
+                    b.HasOne("TheaterBooking.Models.Korisnik", null)
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("TheatreBooking.Models.Korisnik", b =>
-                {
-                    b.HasOne("TheatreBooking.Models.KorisnikUloga", "KorisnikUloga")
-                        .WithOne("Korisnik")
-                        .HasForeignKey("TheatreBooking.Models.Korisnik", "KorisnikUlogaID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
