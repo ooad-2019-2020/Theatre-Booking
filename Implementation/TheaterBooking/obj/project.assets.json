@@ -8952,11 +8952,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Amina\\Source\\Repos\\Grupa8-BiloSta1\\Implementation\\TheaterBooking\\TheaterBooking.csproj",
+      "projectUniqueName": "C:\\Users\\Amina\\Source\\Repos\\Grupa8-BiloSta2\\Implementation\\TheaterBooking\\TheaterBooking.csproj",
       "projectName": "TheaterBooking",
-      "projectPath": "C:\\Users\\Amina\\Source\\Repos\\Grupa8-BiloSta1\\Implementation\\TheaterBooking\\TheaterBooking.csproj",
+      "projectPath": "C:\\Users\\Amina\\Source\\Repos\\Grupa8-BiloSta2\\Implementation\\TheaterBooking\\TheaterBooking.csproj",
       "packagesPath": "C:\\Users\\Amina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Amina\\Source\\Repos\\Grupa8-BiloSta1\\Implementation\\TheaterBooking\\obj\\",
+      "outputPath": "C:\\Users\\Amina\\Source\\Repos\\Grupa8-BiloSta2\\Implementation\\TheaterBooking\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Amina\\AppData\\Roaming\\NuGet\\NuGet.Config",
