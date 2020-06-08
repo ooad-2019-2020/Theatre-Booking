@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Amina\\source\\repos\\Grupa8-BiloSta5\\Implementation\\TheaterBooking\\TheaterBooking.csproj": {}
+    "C:\\Users\\Amina\\Source\\Repos\\Grupa8-BiloSta7\\Implementation\\TheaterBooking\\TheaterBooking.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Amina\\source\\repos\\Grupa8-BiloSta5\\Implementation\\TheaterBooking\\TheaterBooking.csproj": {
+    "C:\\Users\\Amina\\Source\\Repos\\Grupa8-BiloSta7\\Implementation\\TheaterBooking\\TheaterBooking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amina\\source\\repos\\Grupa8-BiloSta5\\Implementation\\TheaterBooking\\TheaterBooking.csproj",
+        "projectUniqueName": "C:\\Users\\Amina\\Source\\Repos\\Grupa8-BiloSta7\\Implementation\\TheaterBooking\\TheaterBooking.csproj",
         "projectName": "TheaterBooking",
-        "projectPath": "C:\\Users\\Amina\\source\\repos\\Grupa8-BiloSta5\\Implementation\\TheaterBooking\\TheaterBooking.csproj",
+        "projectPath": "C:\\Users\\Amina\\Source\\Repos\\Grupa8-BiloSta7\\Implementation\\TheaterBooking\\TheaterBooking.csproj",
         "packagesPath": "C:\\Users\\Amina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amina\\source\\repos\\Grupa8-BiloSta5\\Implementation\\TheaterBooking\\obj\\",
+        "outputPath": "C:\\Users\\Amina\\Source\\Repos\\Grupa8-BiloSta7\\Implementation\\TheaterBooking\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Amina\\AppData\\Roaming\\NuGet\\NuGet.Config",

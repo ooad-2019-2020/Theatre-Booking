@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using TheaterBooking.Models;
 using TheatreBooking.Models;
 
 namespace TheaterBooking.Controllers
@@ -12,19 +16,28 @@ namespace TheaterBooking.Controllers
     public class DogadjajsController : Controller
     {
         private readonly BiloStaContext _context;
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly UserManager<Korisnik> _userManager; 
 
-        public DogadjajsController(BiloStaContext context)
+        public DogadjajsController(BiloStaContext context, IHttpContextAccessor httpContextAccessor, UserManager<Korisnik> userManager)
         {
             _context = context;
+            _httpContextAccessor = httpContextAccessor;
+            _userManager = userManager;
         }
 
         // GET: Dogadjajs
+        [Authorize(Roles ="Administrator, Kupac, PremiumKupac")]
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Dogadjaj.ToListAsync());
+            var user = _httpContextAccessor.HttpContext.User;
+            var userFromDb = await _userManager.GetUserAsync(user);
+            
+            return View(await _context.Dogadjaj.Where(s=>s.CreatedByUserID==userFromDb.Id).ToListAsync());
         }
 
         // GET: Dogadjajs/Details/5
+        [Authorize(Roles = "Administrator, Kupac, PremiumKupac")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -43,6 +56,7 @@ namespace TheaterBooking.Controllers
         }
 
         // GET: Dogadjajs/Create
+        [Authorize(Roles = "Administrator")]
         public IActionResult Create()
         {
             return View();
@@ -53,10 +67,18 @@ namespace TheaterBooking.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Create([Bind("Naziv,Opis,Slika")] Dogadjaj dogadjaj)
         {
             if (ModelState.IsValid)
             {
+                var user = _httpContextAccessor.HttpContext.User;
+                var userFromDb = await _userManager.GetUserAsync(user); 
+                if (userFromDb != null)
+                {
+                    dogadjaj.CreatedByUserID = userFromDb.Id; 
+                }
+                dogadjaj.CreatedDateTime = DateTime.Now;
                 _context.Add(dogadjaj);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -65,6 +87,7 @@ namespace TheaterBooking.Controllers
         }
 
         // GET: Dogadjajs/Edit/5
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -85,6 +108,7 @@ namespace TheaterBooking.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Edit(int id, [Bind("Naziv,Opis,Slika")] Dogadjaj dogadjaj)
         {
             if (id != dogadjaj.DogadjajID)
@@ -116,6 +140,7 @@ namespace TheaterBooking.Controllers
         }
 
         // GET: Dogadjajs/Delete/5
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -136,6 +161,7 @@ namespace TheaterBooking.Controllers
         // POST: Dogadjajs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var dogadjaj = await _context.Dogadjaj.FindAsync(id);

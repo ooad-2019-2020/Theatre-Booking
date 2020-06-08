@@ -15,6 +15,9 @@ namespace TheatreBooking.Models
         public string Naziv { get; set; }
         public string Opis { get; set; }
         public string Slika { get; set; }
+
+       public string CreatedByUserID { get; set; }
+        public DateTime? CreatedDateTime { get; set; }
         public virtual ICollection<Predstava> Predstava { get; set; }
     }
 }
