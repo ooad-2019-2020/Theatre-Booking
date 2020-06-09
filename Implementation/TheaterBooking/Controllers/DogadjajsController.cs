@@ -27,13 +27,13 @@ namespace TheaterBooking.Controllers
         }
 
         // GET: Dogadjajs
-        [Authorize(Roles ="Administrator, Kupac, PremiumKupac")]
+        
         public async Task<IActionResult> Index()
         {
             var user = _httpContextAccessor.HttpContext.User;
             var userFromDb = await _userManager.GetUserAsync(user);
             
-            return View(await _context.Dogadjaj.Where(s=>s.CreatedByUserID==userFromDb.Id).ToListAsync());
+            return View(await _context.Dogadjaj.ToListAsync());
         }
 
         // GET: Dogadjajs/Details/5
@@ -170,6 +170,7 @@ namespace TheaterBooking.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+       
         private bool DogadjajExists(int id)
         {
             return _context.Dogadjaj.Any(e => e.DogadjajID == id);

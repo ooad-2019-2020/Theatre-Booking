@@ -27,6 +27,7 @@ namespace TheaterBooking.Controllers
         }
 
         // GET: Predstava/Details/5
+        [Authorize(Roles = "Administrator, Kupac, PremiumKupac")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -46,6 +47,7 @@ namespace TheaterBooking.Controllers
         }
 
         // GET: Predstava/Create
+        [Authorize(Roles = "Administrator")]
         public IActionResult Create()
         {
             ViewData["DogadjajID"] = new SelectList(_context.Dogadjaj, "DogadjajID", "Naziv");
@@ -57,6 +59,7 @@ namespace TheaterBooking.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Create([Bind("Termin,DogadjajID")] Predstava predstava)
         {
             if (ModelState.IsValid)
@@ -92,6 +95,7 @@ namespace TheaterBooking.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Edit(int id, [Bind("Termin,DogadjajID")] Predstava predstava)
         {
             if (id != predstava.PredstavaID)
@@ -124,6 +128,7 @@ namespace TheaterBooking.Controllers
         }
 
         // GET: Predstava/Delete/5
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -145,6 +150,7 @@ namespace TheaterBooking.Controllers
         // POST: Predstava/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var predstava = await _context.Predstava.FindAsync(id);

@@ -4,13 +4,13 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Događaji</h1>
 
 <p>
-    @if (User.IsInRole("Administrator"))
-    {
-        <a asp-action="Create">Create New</a>
-    }
+      @if (User.IsInRole("Administrator")) 
+     {
+    <a asp-action="Create">Kreiraj novi događaj</a>
+     }
 
 </p>
 <table class="table">
@@ -41,10 +41,17 @@
                 @Html.DisplayFor(modelItem => item.Slika)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.DogadjajID">Edit</a> |
+                @if (User.IsInRole("Administrator"))
+                {
+                    <a asp-action="Edit" asp-route-id="@item.DogadjajID">Edit</a>  
+                } 
+
                 <a asp-action="Details" asp-route-id="@item.DogadjajID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.DogadjajID">Delete</a>
-            </td>
+                @if (User.IsInRole("Administrator"))
+                {
+                    <a asp-action="Delete" asp-route-id="@item.DogadjajID">Delete</a>
+                }
+                </td>
         </tr>
 }
     </tbody>
