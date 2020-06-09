@@ -24,7 +24,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Predstava.PredstavaID)
+                @Html.DisplayFor(modelItem => item.Predstava.Termin)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.RezervacijaID">Edit</a> |
