@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Edna i Anesa\\Desktop\\bilosta\\Implementation\\WebApplication1\\WebApplication1.csproj": {}
+    "C:\\Users\\Amina\\Source\\Repos\\Grupa8-BiloSta10\\Implementation\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Edna i Anesa\\Desktop\\bilosta\\Implementation\\WebApplication1\\WebApplication1.csproj": {
+    "C:\\Users\\Amina\\Source\\Repos\\Grupa8-BiloSta10\\Implementation\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Edna i Anesa\\Desktop\\bilosta\\Implementation\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\Amina\\Source\\Repos\\Grupa8-BiloSta10\\Implementation\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "C:\\Users\\Edna i Anesa\\Desktop\\bilosta\\Implementation\\WebApplication1\\WebApplication1.csproj",
-        "packagesPath": "C:\\Users\\Edna i Anesa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Edna i Anesa\\Desktop\\bilosta\\Implementation\\WebApplication1\\obj\\",
+        "projectPath": "C:\\Users\\Amina\\Source\\Repos\\Grupa8-BiloSta10\\Implementation\\WebApplication1\\WebApplication1.csproj",
+        "packagesPath": "C:\\Users\\Amina\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Amina\\Source\\Repos\\Grupa8-BiloSta10\\Implementation\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Edna i Anesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Amina\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -73,12 +73,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.2, 3.1.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -87,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

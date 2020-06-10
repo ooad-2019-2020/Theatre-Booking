@@ -16,6 +16,7 @@
     <WebStackScaffolding_ViewDialogWidth>812,8</WebStackScaffolding_ViewDialogWidth>
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_DbContextDialogWidth>600</WebStackScaffolding_DbContextDialogWidth>
+    <NameOfLastUsedPublishProfile>FolderProfile</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
